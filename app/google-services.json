@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "120076448303",
+    "firebase_url": "https://messenger-259b9.firebaseio.com",
+    "project_id": "messenger-259b9",
+    "storage_bucket": "messenger-259b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120076448303:android:151a419dbc609212",
+        "android_client_info": {
+          "package_name": "com.example.messnager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120076448303-bhpoojcufs2k5kfojisrn69acc70ss5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_vUQGfKy9u1DBh2fHuTeuXkYNvDnsKws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120076448303:android:eb889dc563134cdd",
+        "android_client_info": {
+          "package_name": "com.example.toshiba.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120076448303-bhpoojcufs2k5kfojisrn69acc70ss5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_vUQGfKy9u1DBh2fHuTeuXkYNvDnsKws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

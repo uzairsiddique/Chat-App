@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        tools:context=".chatlog">
+
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyView_chaLog"
+            android:background="@android:color/holo_blue_light"
+            android:layout_above="@+id/linear_view">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linear_view"
+            android:layout_height="50dp">
+
+        <EditText
+                android:layout_alignParentBottom="true"
+                android:layout_width="365dp"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:hint="Type messgae here!!"
+                android:paddingLeft="10dp"
+                android:id="@+id/textMsg"/>
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_send_black_24dp"
+                android:id="@+id/send_btn_chatLog" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

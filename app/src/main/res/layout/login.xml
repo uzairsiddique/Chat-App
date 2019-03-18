@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#73c6f4"
+>
+
+    <EditText
+            android:id="@+id/email_edit_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/rounded_edittext_reg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"/>
+    <EditText
+            android:id="@+id/password_edit_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_reg"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"/>
+
+    <Button
+            android:id="@+id/login_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_btn"
+            android:text="Login"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/back_to_reg"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="Back To Registartion."
+            android:layout_height="wrap_content"/>
+</LinearLayout>
