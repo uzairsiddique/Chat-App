@@ -15,6 +15,8 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_chatlog.*
+import android.support.v7.widget.helper.ItemTouchHelper
+
 
 class chatlog : AppCompatActivity() {
 
@@ -23,7 +25,6 @@ class chatlog : AppCompatActivity() {
     lateinit var user: Users
     var fromId = FirebaseAuth.getInstance().uid
     var toId: String = new_message.toUser!!.uid
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,17 @@ class chatlog : AppCompatActivity() {
 //        chatData.add(ChatMessage("","kesi ho","",""))
 
         val recyCleview: RecyclerView = findViewById(R.id.recyView_chaLog)
+
+
+//
+
+
+        val swipeController = swipeController(this@chatlog,chatData,fromId + toId)
+        val itemTouchhelper = ItemTouchHelper(swipeController)
+        itemTouchhelper.attachToRecyclerView(recyCleview)
+
+
+//
         adapter = chat_adapter_RecyclerView(this@chatlog, chatData)
         recyCleview.layoutManager = LinearLayoutManager(this@chatlog)
         recyCleview.adapter = adapter
@@ -54,7 +66,7 @@ class chatlog : AppCompatActivity() {
     private fun displayMessagesFromDb() {
         val dbRef = FirebaseDatabase.getInstance().getReference("/UserMessages/" + fromId + toId)
 
-        Log.d("Displaymessage","Usermesages ")
+        Log.d("Displaymessage", "Usermesages ")
         dbRef.addChildEventListener(object : ChildEventListener {
 
             override fun onCancelled(p0: DatabaseError) {
