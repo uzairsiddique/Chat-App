@@ -12,6 +12,20 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".GroupChatView">
+
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".GroupChatView"
+            />
+        </activity>
+        <activity android:name=".GroupChatLog">
+        </activity>
+        <activity android:name=".GroupChat_recyclerView">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".GroupChat_recyclerView"/>
+        </activity>
         <activity android:name=".chatlog">
         </activity>
         <activity android:name=".new_message">

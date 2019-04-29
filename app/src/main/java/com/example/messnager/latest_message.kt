@@ -35,6 +35,11 @@ class latest_message : AppCompatActivity() {
                 val intent = Intent(this, new_message::class.java)
                 startActivity(intent)
             }
+
+            R.id.group_chat_menu -> {
+                val intent = Intent(this, GroupChat_recyclerView::class.java)
+                startActivity(intent)
+            }
             R.id.menu_signOut -> {
 
                 FirebaseAuth.getInstance().signOut()

@@ -3,7 +3,14 @@
 
     <item
             android:id="@+id/newMessage_menu"
-            android:title="New Message"
+            android:icon="@drawable/ic_message_black_24dp"
+            app:showAsAction="ifRoom"
+            android:title="Message"
+    />
+    <item
+            android:id="@+id/group_chat_menu"
+            android:title="Group Chat"
+            android:icon="@drawable/ic_group_add_black_24dp"
             app:showAsAction="ifRoom"
 
     ></item>

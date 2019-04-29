@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.widget.Toast
 import com.example.messnager.Adaptter.NewMessageAdapter
+import com.example.messnager.GroupChatView.Companion.userClick
 import com.example.messnager.Models.Users
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ChildEventListener
@@ -36,16 +37,19 @@ class new_message : AppCompatActivity() {
         val adapter = NewMessageAdapter(this@new_message, userData,
             { view, position ->
                 val user = userData[position]
-                toUser = user
+                new_message.toUser = user
 //                Log.d("UserObj ", fromUser?.username)
 //                Log.d("UerObj", toUser?.username)
-                startActivity(Intent(this@new_message, chatlog::class.java))
+                    userClick = true
+                    startActivity(Intent(this@new_message, chatlog::class.java))
             })
         recycler.adapter = adapter
         adapter.notifyDataSetChanged()
+
+
         val dbRef = FirebaseDatabase.getInstance().reference
 
-        Toast.makeText(applicationContext, "uzair", Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext, "Contant", Toast.LENGTH_SHORT).show()
 
         dbRef.child("users").addChildEventListener(object : ChildEventListener {
 
